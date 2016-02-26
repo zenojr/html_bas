@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trabalhando com Canvas 01</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<canvas id="tela" width="600" height="400"></canvas>
+
+<script>
+	var tela = document.getElementById("tela");
+	var c = tela.getContext("2d");
+
+	
+	c.fillStyle="green";
+	c.fillRect(0,0,200,400);
+
+
+	c.fillStyle="red";
+	c.fillRect(400,0,200,400);
+
+	c.fillStyle="gray";
+	c.beginPath();
+	c.moveTo(300, 200);
+	c.lineTo(200, 400);
+	c.lineTo(400,400);
+	c.fill();
+
+	c.fillStyle="blue";
+	c.beginPath();
+	c.arc(300, 200, 50, 0, 2*Math.PI);
+	c.fill();
+
+
+
+
+	c.fillStyle="yellow";
+	c.fillRect(0,0,200,100);
+
+	c.fillStyle="blue";
+	c.fillRect(0,100,200,30);
+
+	c.fillStyle="red";
+	c.fillRect(0,130,200,30);
+
+	c.fillStyle="white";
+	c.fillRect(300, 0, 50, 150);
+
+	c.fillStyle="red";
+	c.fillRect(350, 0, 150, 50);
+
+	c.fillStyle="green";
+	c.fillRect(350,50,150,50);
+
+
+</script>
+
+</body>
+</html>
